@@ -1,0 +1,193 @@
+{
+	"id": 1,
+	"name": "Enlisted",
+	"order": 1,
+	"image": "",
+	"units": [
+		{
+			"name": "Infantrymen",
+			"type": "Infantry",
+			"points": 2,
+			"bases": 3,
+			"stats": [
+				{
+					"name": "Command",
+					"order": 1,
+					"value": null
+				},
+				{
+					"name": "Def",
+					"order": 2,
+					"value": "4+"
+				},
+				{
+					"name": "Save",
+					"order": 3,
+					"value": "d6"
+				},
+				{
+					"name": "Move",
+					"order": 4,
+					"value": "2DU"
+				}
+			],
+			"abilities": [
+				{
+					"cost": "-",
+					"name": "Rifle (per base)",
+					"optionalDescription": null,
+					"diceRoll": "1d6",
+					"range": "1DU",
+					"specialRules": null,
+					"dieSlots": [
+						{
+							"title": "Free"
+						}
+					],
+					"canBePrepared": false
+				},
+				{
+					"cost": "4-6",
+					"name": "Grenade",
+					"optionalDescription": null,
+					"diceRoll": "1d6",
+					"range": "2DU",
+					"specialRules": [
+						"IC, AP1"
+					],
+					"dieSlots": [
+						{
+							"title": "4-6"
+						}
+					],
+					"canBePrepared": false
+				}
+			]
+		},
+		{
+			"name": "Armoured Infantry",
+			"type": "Infantry",
+			"points": 4,
+			"bases": 3,
+			"stats": [
+				{
+					"name": "Command",
+					"order": 1,
+					"value": "2"
+				},
+				{
+					"name": "Def",
+					"order": 2,
+					"value": "4+"
+				},
+				{
+					"name": "Save",
+					"order": 3,
+					"value": "d6(2)"
+				},
+				{
+					"name": "Move",
+					"order": 4,
+					"value": "2DU"
+				}
+			],
+			"abilities": [
+				{
+					"name": "Rifle (per base)",
+					"optionalDescription": null,
+					"diceRoll": "1d6",
+					"range": "2DU",
+					"dieSlots": [
+						{
+							"title": "Free"
+						}
+					],
+					"canBePrepared": false
+				},
+				{
+					"name": "Grenade Launcher",
+					"optionalDescription": null,
+					"diceRoll": "1d8",
+					"range": "4DU",
+					"specialRules": [
+						"IC, Area 1"
+					],
+					"dieSlots": [
+						{
+							"title": "4-6"
+						}
+					],
+					"canBePrepared": false
+				},
+				{
+					"name": "Heavy MG",
+					"optionalDescription": null,
+					"diceRoll": "4d6",
+					"range": "2DU",
+					"specialRules": null,
+					"dieSlots": [
+						{
+							"title": "5-6"
+						}
+					],
+					"canBePrepared": false
+				}
+			]
+		}
+	],
+	"characters": [
+		{
+			"name": "General",
+			"points": 5,
+			"description": "Cmd 4",
+			"abilities": [
+				{
+					"optionalDescription": "Roll up to 4 ADs from the Spent pile",
+					"diceRoll": null,
+					"specialRules": [
+						"Area 2"
+					],
+					"dieSlots": [
+						{
+							"title": "1"
+						},
+						{
+							"title": "1"
+						}
+					],
+					"canBePrepared": false
+				}
+			]
+		}
+	],
+
+	"support": [
+		{
+			"name": "Mortar Fire",
+			"points": 6,
+			"description": "The Activation Dice used for {0} must be three of a kind.",
+			"abilities": [
+				{
+					"name": "Bombing",
+					"optionalDescription": null,
+					"diceRoll": "1d8",
+					"specialRules": [
+						"Area 2"
+					],
+					"dieSlots": [
+						{
+							"title": "STAR"
+						},
+						{
+							"title": "STAR"
+						},
+						{
+							"title": "STAR"
+						}
+					],
+					"canBePrepared": false
+				}
+			]
+		}
+	]
+}
